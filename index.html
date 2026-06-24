@@ -111,8 +111,8 @@
   <div class="header">
     <div class="header-label">NPB プロ野球 AI 予測</div>
     <div class="header-date">2026年6月24日（水）</div>
-    <div class="header-sub">セ2試合・パ3試合（広島v巨人: 雨天中止）</div>
-    <div class="header-badge final">データ基準: 2026-06-24 最終分析版</div>
+    <div class="header-sub">セ2試合・パ2試合（日ハムvロッテ終了 / 広島v巨人: 雨天中止）</div>
+    <div class="header-badge final">データ基準: 2026-06-24 最終分析版（最終更新）</div>
   </div>
 
   <div class="notice-box">
@@ -122,8 +122,8 @@
     → <strong style="color:var(--home);">累積44試合: 24勝20敗 (54.5%)</strong> ／ Brier <strong style="color:var(--accent);">0.247</strong>
     <span style="color:var(--accent);font-weight:700;margin-top:8px;display:block;">【最終分析版 更新内容（6/24）】</span>
     <span style="display:block;margin-top:2px;">
-      ⛔ <strong style="color:#ef4444;">広島 vs 巨人 → 雨天中止</strong>（マツダスタジアム・当日中止確認）<br>
-      🟠 <strong style="color:#f97316;">日ハム vs ロッテ → 試合中</strong>（13:00開始・途中速報 日ハム6-0ロッテ）予測変更不可<br>
+      ⛔ <strong style="color:#ef4444;">広島 vs 巨人 → 雨天中止</strong>（マツダスタジアム・当日中止確認済み）<br>
+      ✅ <strong style="color:#86efac;">日ハム vs ロッテ → 試合終了 日ハム7-4ロッテ ○的中</strong>（13:00開始。実先発: <strong>加藤貴之</strong>（日ハム）vs <strong>河村説人</strong>（ロッテ）。朝版推定の伊藤大海/ジャクソンと異なるが予測方向は的中）<br>
       🔄 <strong style="color:#86efac;">中日55%C → DeNA59%B</strong>（先発変更: 柳裕也推定→<strong>櫻井頼之介</strong>確定。対戦相手<strong>東克樹</strong>のERA2026リーグ上位確認により先発差逆転）<br>
       🔄 <strong style="color:#86efac;">阪神54%C → 阪神55%C</strong>（先発変更: 伊藤将司推定→<strong>大竹耕太郎</strong>確定 ERA2.52 WHIP1.12）<br>
       🔄 <strong style="color:#86efac;">SFB52%C → SFB54%C</strong>（OX先発: <strong>田嶋大樹</strong>確定 ERA4.64 → 中村稔弥代役リスクと相殺・SFB微上昇）<br>
@@ -311,27 +311,27 @@
 
   <div class="section-title">試合中・中止</div>
 
-  <!-- 日ハム 59%B 試合中 -->
-  <div class="game-card inprogress-card">
+  <!-- 日ハム 59%B 試合終了・的中 -->
+  <div class="game-card grade-b-card">
     <div class="card-meta">
       <span class="card-venue">エスコンフィールド北海道</span>
-      <span class="card-time">13:00 開始</span>
-      <span class="grade-badge live">試合中</span>
+      <span class="card-time">13:00 開始・試合終了</span>
+      <span class="grade-badge B">B ✓</span>
     </div>
     <div class="teams-row">
       <div class="team-block">
         <div class="team-name home">日本ハム</div>
-        <div class="team-starter">伊藤 大海（推定）</div>
+        <div class="team-starter">加藤 貴之（実際）</div>
       </div>
       <div class="vs-label">vs</div>
       <div class="team-block">
         <div class="team-name visitor">ロッテ</div>
-        <div class="team-starter">A.ジャクソン（推定）</div>
+        <div class="team-starter">河村 説人（実際）</div>
       </div>
     </div>
     <div class="prob-section">
       <div class="prob-labels">
-        <span class="prob-home">日本ハム 59%（朝版B）</span>
+        <span class="prob-home">日本ハム 59%（B）→ <strong style="color:#86efac;">的中 ○</strong></span>
         <span class="prob-visitor">ロッテ 41%</span>
       </div>
       <div class="prob-bar-track">
@@ -339,14 +339,14 @@
       </div>
     </div>
     <div class="score-row">
-      <span class="score-label">途中速報</span>
-      <span class="score-val">日ハム 6-0 ロッテ</span>
-      <span class="live-score">試合中</span>
+      <span class="score-label">最終スコア</span>
+      <span class="score-val" style="color:#86efac;">日ハム 7-4 ロッテ</span>
+      <span class="predicted-winner home-win">日本ハム 的中 ○</span>
     </div>
     <ul class="reason-list">
-      <li><span class="upd-neu">13:00開始のデーゲーム。最終分析版作成時点で試合進行中のため確率更新なし。朝版59%Bを維持。</span></li>
-      <li>途中速報: 日ハム6-0ロッテ（試合進行中・取得時点）。朝版予測の方向性は支持されている。</li>
-      <li>朝版根拠: 伊藤大海ERA2.77 WHIP1.17（推定）vs A.ジャクソンERA3.41 WHIP1.15（推定）+ エスコンF+4pt。</li>
+      <li><span class="upd-pos">試合終了確認（13:00開始デーゲーム）。日ハム 7-4 ロッテ で日ハム勝利 → 予測的中。</span></li>
+      <li><span class="upd-neg">朝版推定先発（伊藤大海 vs A.ジャクソン）は外れ。実際は加藤貴之（日ハム）vs 河村説人（ロッテ）。先発推定ミスだが予測方向は正しかった。</span></li>
+      <li>朝版根拠: エスコンF+4pt + 日ハムチーム優位（.549 vs .508）が実際に機能。7-4の打撃戦。</li>
     </ul>
   </div>
 
@@ -405,7 +405,7 @@
     </div>
   </div>
 
-  <div class="section-title" style="margin-top:18px;">予測精度サマリー（44試合終了・6/23検証済み）</div>
+  <div class="section-title" style="margin-top:18px;">予測精度サマリー（44試合終了・6/23検証済み + 6/24デーゲーム結果）</div>
   <div style="background:var(--card-bg2);border:1px solid var(--border);border-radius:8px;padding:10px 12px;font-size:10px;color:var(--muted);line-height:1.8;">
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;">
       <div>累積的中率: <strong style="color:var(--home);">54.5%</strong>（24/44）</div>
@@ -416,7 +416,7 @@
       <div>ビジター予測: <strong>61.5%</strong>（8/13）</div>
     </div>
     <div style="margin-top:6px;border-top:1px solid var(--border);padding-top:6px;">
-      6/23は3勝3敗(50%)。最終分析版での主要変更: 中日55%C→DeNA59%B（東克樹確定・先発逆転）、阪神54%→55%（大竹確定）、SFB52%→54%（田嶋ERA4.64確認）。広島v巨人は中止・検証除外。6/24検証は翌日夜版で更新予定。
+      <strong style="color:#86efac;">6/24デーゲーム確定: 日ハム59%B ○（7-4ロッテ）。</strong>実先発は加藤貴之vs河村説人（朝版推定と異なるが方向的中）。広島v巨人は雨天中止・検証除外。18:00ゲーム（楽天西武・中日DeNA・阪神ヤクルト・SFB OX）の検証は夜版で更新予定。最終分析版変更: 中日55%C→DeNA59%B・阪神55%C・SFB54%C。
     </div>
   </div>
 
@@ -428,7 +428,7 @@
   </div>
 
   <div class="disclaimer">
-    <span class="warn">【免責事項】</span> 本予測はAIによる統計的分析であり、<span class="warn">勝利を保証するものではありません。</span>野球の単一試合は分散が大きく、65%の本命でも約35%は負ける。投資・賭博等の判断への使用は禁止します。本ページは2026-06-24（最終分析版）。先発成績・チーム成績は6/23終了時点。確定先発: 大竹耕太郎（阪神）・奥川恭伸（ヤクルト）・東克樹（DeNA）・田嶋大樹（OX）・中村稔弥（SFB・代役）。楽天・西武先発は未確認。東克樹の確定ERA数値は未取得（リーグ上位確認のみ）。広島v巨人は雨天中止。日ハムvロッテは最終分析版作成時点で試合中（速報6-0日ハム）。累積44試合は統計的に有意なサンプルとは言えず、評価は数十試合単位で行う。
+    <span class="warn">【免責事項】</span> 本予測はAIによる統計的分析であり、<span class="warn">勝利を保証するものではありません。</span>野球の単一試合は分散が大きく、65%の本命でも約35%は負ける。投資・賭博等の判断への使用は禁止します。本ページは2026-06-24（最終分析版・最終更新）。先発成績・チーム成績は6/23終了時点。確定先発: 大竹耕太郎（阪神）・奥川恭伸（ヤクルト）・東克樹（DeNA）・田嶋大樹（OX）・中村稔弥（SFB・代役）。楽天・西武先発は未確認。東克樹の確定ERA数値は未取得（リーグ上位確認のみ）。広島v巨人は雨天中止。日ハムvロッテは試合終了（日ハム7-4ロッテ・的中。実先発: 加藤貴之vs河村説人）。累積44試合は統計的に有意なサンプルとは言えず、評価は数十試合単位で行う。
   </div>
 
 </body>
