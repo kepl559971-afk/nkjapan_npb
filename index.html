@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-  <title>NPBプロ野球予測 2026-06-26 朝版</title>
+  <title>NPBプロ野球予測 2026-06-26 最終分析版</title>
   <style>
     :root {
       --bg: #0B1220;
@@ -37,7 +37,7 @@
     .header-date { font-size: 22px; font-weight: 700; color: var(--home); letter-spacing: -0.02em; }
     .header-sub { font-size: 11px; color: var(--muted); margin-top: 4px; }
     .header-badge { display: inline-block; background: #1a2840; border: 1px solid var(--border); border-radius: 4px; padding: 2px 8px; font-size: 10px; color: var(--muted); margin-top: 6px; }
-    .header-badge.morning { background: rgba(255,181,46,0.1); border-color: rgba(255,181,46,0.3); color: var(--home); }
+    .header-badge.final { background: rgba(63,166,107,0.12); border-color: rgba(63,166,107,0.4); color: var(--accent); }
     .notice-box { background: var(--card-bg2); border: 1px solid var(--border); border-radius: 8px; padding: 10px 12px; margin-bottom: 10px; font-size: 10px; color: var(--muted); line-height: 1.6; }
     .section-title { font-size: 11px; font-weight: 600; color: var(--muted); letter-spacing: 0.06em; text-transform: uppercase; margin: 16px 0 8px; padding-bottom: 4px; border-bottom: 1px solid var(--border); }
     .pick-banner { border-radius: 8px; padding: 12px 14px; margin-bottom: 14px; display: flex; align-items: center; gap: 10px; }
@@ -104,8 +104,8 @@
   <div class="header">
     <div class="header-label">NPB プロ野球 AI 予測</div>
     <div class="header-date">2026年6月26日（金）</div>
-    <div class="header-sub">実施5試合（パ2・セ3）・楽天/広島/ヤクルト/阪神/OX は試合なし</div>
-    <div class="header-badge morning">データ基準: 2026-06-26 朝版</div>
+    <div class="header-sub">実施5試合（パ2・セ3）・楽天/OX は試合なし</div>
+    <div class="header-badge final">データ基準: 2026-06-26 最終分析版</div>
   </div>
 
   <div class="notice-box">
@@ -121,7 +121,7 @@
     <div class="pick-icon">👀</div>
     <div>
       <div class="pick-title seeoff">厳選ピック（グレードA・70%以上）: 該当なし — 本日は見送り推奨</div>
-      <div class="pick-body">最高63%（西武ホーム）。全5試合グレードB〜C。いずれも70%到達根拠なし。</div>
+      <div class="pick-body">最高63%（西武ホーム）。全5試合グレードB〜C。70%到達根拠なし。全先発確認済み・データ制約なし。</div>
     </div>
   </div>
 
@@ -161,10 +161,10 @@
     </div>
     <ul class="reason-list">
       <li><span class="key">チーム差: 西武.614(パ1位) vs 日ハム.556(パ3位) 差.058 → 西武有利</span></li>
-      <li><span class="key">先発差(大): 髙橋光成 ERA1.21(パリーグ2位) vs 伊藤大海 ERA2.99(パ7位) → ERA差1.78</span></li>
-      <li>ベルーナドーム+4pt。チーム差.058換算+3pt + ホーム+4pt + ERA差1.78換算+5pt = 西武63%B。</li>
-      <li><span class="upd-pos">髙橋光成ERA1.21: 「相手先発ERA1.5以下ルール」は日ハム側視点で機能 → 日ハムの確率がさらに下がる方向。</span></li>
-      <li>伊藤大海ERA2.99: 両先発確認済み。先発ERA差がほぼ唯一の不確実要素で、髙橋光成の優位が明確。</li>
+      <li><span class="key">先発差(大): 髙橋光成 ERA1.21(パ2位・Full-Count記事で"0.89&amp;1.23"に言及) vs 伊藤大海 ERA2.99 → ERA差1.78</span></li>
+      <li>ベルーナドーム+4pt。チーム差+3pt + ホーム+4pt + ERA差換算+5pt = 西武63%B。</li>
+      <li><span class="upd-pos">伊藤大海: 2026年最多勝争い1位・奪三振1位も防御率7位(ERA2.99) → チーム差・ERA差とも西武有利。</span></li>
+      <li><span class="upd-neu">6/25楽天に敗れた西武は直近2連敗中も、先発質の差は数値が示す通り。ERAs差1.78は今日5試合中最大。</span></li>
     </ul>
   </div>
 
@@ -201,11 +201,11 @@
       <span class="predicted-winner visitor-win">SFB 予測</span>
     </div>
     <ul class="reason-list">
-      <li><span class="key">先発差(最大級): 大津亮介 ERA1.14(パリーグ1位・2026最優秀水準) vs A.ジャクソン ERA3.59</span></li>
-      <li><span class="key">大津ERA1.14ルール適用: 対戦相手(ロッテ)の確率は55%以下上限 → SFB62%設定</span></li>
-      <li>チーム差: SFB.594(パ2位) vs ロッテ.500(パ5位) 差.094 → SFB+5pt。ZOZOマリンホーム+4ptを差し引いてもERA差2.45が圧倒。</li>
-      <li><span class="upd-neg">大津ERA1.14は今季パ最優秀先発。6/19エスコンF登板から1週間以上でコンディション維持の可能性が高い。</span></li>
-      <li>SFBは6/25にOXを5-2で下し連勝中。ロッテは6/25試合なし。ERA差2.45が直結するスコアとして2-5を予想。</li>
+      <li><span class="key">先発差(最大級): 大津亮介 ERA1.14(パ1位) vs A.ジャクソン ERA3.59 → ERA差2.45</span></li>
+      <li><span class="key">大津ERA1.14ルール: 対戦相手の確率55%以下上限 → SFB62%B(ビジター優位設定)</span></li>
+      <li>チーム差: SFB.594(パ2位) vs ロッテ.500(パ5位) 差.094 → SFB+5pt。ZOZOマリンホーム+4pt差し引いてもERA差2.45が圧倒。</li>
+      <li><span class="upd-pos">ジャクソン(ロッテ): 12先発・平均6.06回/登板・奪三振激増(DeNA時代比)と健闘も、ERA3.59は不安定さを示す。</span></li>
+      <li><span class="upd-neu">SFBは6/25にOXを5-2で下し連勝中。ロッテは6/25試合なし。大津ERA1.14は6/19エスコンF登板から1週間超でコンディション維持が期待される。</span></li>
     </ul>
   </div>
 
@@ -245,8 +245,8 @@
       <li><span class="key">チーム差(大): ヤクルト.537(セ3位) vs 中日.377(セ6位) 差.160 → ヤクルト大幅優位</span></li>
       <li><span class="key">先発差(逆方向): 金丸夢斗 ERA2.67 vs 吉村貢司郎 ERA3.83/WHIP0.99 → 中日先発ERA有利</span></li>
       <li>チーム差.160換算+8pt。神宮ホーム+4pt。ERA差逆方向1.16換算-4pt → ヤクルト58%B。</li>
-      <li><span class="upd-neu">金丸ERA2.67: 6/19東京ドーム登板から間隔あり。吉村WHIP0.99は打者を打ち取る効率が高く、ERA差ほど実質差は開かない可能性。</span></li>
-      <li>6/19教訓: 金丸ERA2.43が巨人差.199を破った例あり。チーム差大でもERA逆方向は不的中リスク。チーム差.160の大幅優位で58%維持。</li>
+      <li><span class="upd-neg">6/19教訓: 金丸ERA2.43が巨人差.199を破った例あり。チーム差大でもERA逆方向は不的中リスク。チーム差.160の大幅優位で58%維持(過信禁物)。</span></li>
+      <li><span class="upd-neu">吉村WHIP0.99: ERA3.83に比しランナーを溜めない安定感。神宮は本塁打出やすい球場だが、金丸ERA2.67のコントロール型とは相性が良い可能性。</span></li>
     </ul>
   </div>
 
@@ -284,10 +284,10 @@
     </div>
     <ul class="reason-list">
       <li><span class="key">チーム差: 阪神.545(セ1位T) vs 広島.400(セ5位) 差.145 → 阪神優位</span></li>
-      <li><span class="key">先発差(微): 村上頌樹 ERA1.93/WHIP0.92 vs 床田寛樹 ERA2.34 → 阪神ビジター先発微優位</span></li>
+      <li><span class="key">先発差(微): 村上頌樹 ERA1.93/WHIP0.92 vs 床田寛樹 ERA2.34 → 阪神先発微優位</span></li>
       <li>チーム差.145換算+7pt。マツダ広島ホーム-4pt(ビジター補正)。ERA差0.41換算+2pt → 阪神56%C。</li>
-      <li><span class="upd-neu">村上ERA1.93はACE水準。ただし1.93は「ERA1.5以下ルール」非対象。マツダスタジアムのホーム補正が阪神の上値を抑制。</span></li>
-      <li>広島(.400)は低迷中。床田ERA2.34は安定しているが、チーム力差と村上の先発質差で阪神ビジター優位判断。</li>
+      <li><span class="upd-neu">村上ERA1.93・WHIP0.92: 2025年三冠王レベルの制球。2026も安定水準維持。「ERA1.5以下ルール」非対象だが、WHIP0.92は今季セリーグ屈指。</span></li>
+      <li>広島(.400)は低迷。床田ERA2.34は今季エース格も、チーム力差.145と村上の先発質差でビジター阪神優位。拮抗カードのため56%C(見送り推奨)。</li>
     </ul>
   </div>
 
@@ -326,14 +326,14 @@
     <ul class="reason-list">
       <li><span class="key">チーム差: 巨人.545(セ1位T) vs DeNA.403(セ4位) 差.142 → 巨人優位</span></li>
       <li><span class="key">先発差(ゼロ): 石田裕太郎 ERA1.93 vs 竹丸和幸 ERA1.93 → ERA完全一致・調整=0</span></li>
-      <li>ERA同一のためERA調整なし。チーム差.142換算+7pt。横浜DeNAホーム-4pt(ビジター補正)。純計: 50+7-4 = 53% → 実績補正54%C。</li>
-      <li><span class="upd-neu">両先発ERA1.93は高水準。ERA調整ゼロの場合、チーム力差のみが判断根拠。DeNAホーム補正がなければ巨人57%に達した。</span></li>
-      <li>DeNAは6/25に中日へ3-1で敗北し連敗中。巨人は6/25試合なし。チーム差.142がスコア差として表れると予測。</li>
+      <li>ERA同一のためERA調整なし。チーム差.142換算+7pt。横浜DeNAホーム-4pt(ビジター補正)。純計: 50+7-4 ≒ 53% → 実績補正54%C。</li>
+      <li><span class="upd-neu">石田ERA1.93: 3勝5敗・QS率80%(10先発)という「強いのに勝てない」典型。DeNA打線の貧打が主因。ERA1.93でも打線支援なければ敗戦継続。</span></li>
+      <li>DeNAは6/25に中日へ3-1で敗北。巨人は6/25試合なし(疲労なし)。チーム差.142がスコア差として表れると予測。拮抗カードのため見送り推奨。</li>
     </ul>
   </div>
 
   <div class="section-title" style="margin-top:20px;">2026シーズン順位表（6/25終了時点）</div>
-  <div style="font-size:9px;color:var(--muted);margin-bottom:6px;">※6/25は楽天2-0西武・SFB5-2OX・中日3-1DeNA（3試合実施）。阪神vヤクルトは台風8号接近により中止。本日6/26は全5試合18:00〜予定。</div>
+  <div style="font-size:9px;color:var(--muted);margin-bottom:6px;">※6/25実施: 楽天2-0西武・SFB5-2OX・中日3-1DeNA（3試合）。阪神vヤクルトは台風8号により中止。本日6/26は全5試合18:00〜予定。</div>
   <div style="display:flex;gap:8px;">
     <div style="flex:1;">
       <div style="font-size:10px;color:var(--muted);font-weight:600;margin-bottom:4px;border-bottom:1px solid var(--border);padding-bottom:3px;">パ・リーグ</div>
@@ -372,7 +372,7 @@
   <div class="disclaimer">
     <span class="warn">【免責事項】</span><br>
     本予測は統計的モデルによる参考情報です。<strong>野球の単一試合は分散が大きく、65%の本命でも約35%は負けます。</strong>10試合単位でも外れ続ける可能性があります。的中を保証するものではありません。<br><br>
-    データ基準: 2026-06-26 朝版。髙橋光成(西武)・伊藤大海(日ハム)・大津亮介(SFB)・A.ジャクソン(ロッテ)・吉村貢司郎(ヤクルト)・金丸夢斗(中日)・床田寛樹(広島)・村上頌樹(阪神)・石田裕太郎(DeNA)・竹丸和幸(巨人)全先発確認済み。本サイトの情報を投資・賭博等の判断材料に使用することを禁じます。
+    データ基準: 2026-06-26 最終分析版。全10先発確認済み（髙橋光成ERA1.21・伊藤大海ERA2.99・大津亮介ERA1.14・A.ジャクソンERA3.59・吉村貢司郎ERA3.83・金丸夢斗ERA2.67・床田寛樹ERA2.34・村上頌樹ERA1.93・石田裕太郎ERA1.93・竹丸和幸ERA1.93）。本サイトの情報を投資・賭博等の判断材料に使用することを禁じます。
   </div>
 
 </body>
