@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-  <title>NPBプロ野球予測 2026-07-05 最終分析版</title>
+  <title>NPBプロ野球予測 2026-07-05 追加確認版</title>
   <style>
     :root {
       --bg: #0B1220;
@@ -89,7 +89,7 @@
     <div class="header-label">NPB プロ野球 AI 予測</div>
     <div class="header-date">2026年7月5日（日）</div>
     <div class="header-sub">本日6試合（デーゲーム3試合 13:30〜14:00／夕方1試合 17:00／ナイター2試合 18:00〜）</div>
-    <div class="header-badge">データ基準: 2026-07-05 最終分析版 09:20 JST（朝版 08:45 から先発4枠を確定）</div>
+    <div class="header-badge">データ基準: 2026-07-05 追加確認 10:50 JST（朝版08:45→最終分析版09:20→福島蓮ERA確定を反映）</div>
   </div>
 
   <!-- 前日検証 -->
@@ -105,6 +105,12 @@
   <div class="notice-box">
     <span style="color:#e2e8f0;font-weight:700;">カード整合性チェック（日付明記ソース必須）:</span>
     日曜のため7/4と同一6カード継続が原則。<strong style="color:#e2e8f0;">最終分析版でスポーツ報知「【5日の予告先発】」（2026-07-04付・dメニューニュース配信）の全文スニペットを取得し、6カード12先発を全て確定</strong>: ヤクルト吉村貢司郎-DeNA深沢鳳介（18:00神宮）／中日金丸夢斗-巨人井上温大（13:30バンテリン）／阪神村上頌樹-広島床田寛樹（18:00甲子園）／楽天コントレラス-日ハム福島蓮（17:00楽天モバイル）／OXエスピノーザ-西武隅田知一郎（14:00京セラD）／SFB松本晴-ロッテ小島和哉（13:30みずほPayPay）。パ・リーグ.com・サンスポ・ヤクルト球団公式・goal.comの日付明記記事とも整合。「7/5先発=北斗・ロング・前田・細野」とする集約情報は全員7/4登板済みのため<strong style="color:#e2e8f0;">誤情報として排除</strong>。npb.jp・統計サイトの直接取得は403継続のためスニペット抽出で代替。
+  </div>
+
+  <!-- 追加確認 -->
+  <div class="notice-box">
+    <span style="color:#e2e8f0;font-weight:700;">追加確認（10:50 JST）:</span>
+    最終分析版の公開後、福島蓮（日本ハム）の今季成績が新たに判明（パ・リーグ.com「東北楽天・コントレラスが来日初登板 福島蓮は直近4登板連続QSをマーク」2026-07-05付: 8試合3勝2敗 防2.26）。楽天-日ハムの先発差評価を+1pt→+2ptに引き上げ、日本ハム53%C→54%Cに更新。松本晴（SFB）・井上温大（巨人）は追加検索でも未取得のまま変更なし。他4試合・順位表・累積成績に変更なし。甲子園の雨天中止発表は本更新時点（10:50頃）ではまだ確認できず、降水確率55〜80%のリスクは継続中。
   </div>
 
   <!-- 厳選判定 -->
@@ -206,11 +212,11 @@
     </ul>
   </div>
 
-  <!-- 4. 楽天 - 日ハム 日ハム53% C -->
+  <!-- 4. 楽天 - 日ハム 日ハム54% C -->
   <div class="game-card grade-c-card">
     <div class="card-meta">
       <span class="card-venue">楽天モバイルパーク宮城 17:00</span>
-      <span class="grade-badge c">グレード C ／ 日本ハム 53%（ビジター）</span>
+      <span class="grade-badge c">グレード C ／ 日本ハム 54%（ビジター）</span>
     </div>
     <div class="teams-row">
       <div class="team-block">
@@ -220,19 +226,18 @@
       <div class="score-pred">2 - 3</div>
       <div class="team-block">
         <div class="team-name visitor">日本ハム</div>
-        <div class="team-starter">福島蓮（4登板連続QS）</div>
+        <div class="team-starter">福島蓮（3勝2敗 防2.26）</div>
       </div>
     </div>
     <div class="prob-bar">
-      <div class="prob-home" style="width:47%">47%</div>
-      <div class="prob-visitor" style="width:53%">53%</div>
+      <div class="prob-home" style="width:46%">46%</div>
+      <div class="prob-visitor" style="width:54%">54%</div>
     </div>
     <div class="prob-labels"><span>ホーム勝率</span><span>ビジター勝率</span></div>
     <ul class="reason-list">
       <li>チーム勝率差 .570 vs .384で日ハム+7pt／楽天ホーム+4pt</li>
-      <li><span class="key">コントレラスはNPB1軍実績ゼロ</span>（2軍21.2回 防2.49・MLB95登板・右上腕張り離脱歴）→ 控えめ評価で日ハム+1pt</li>
-      <li>福島蓮は5/28以降4登板連続QS（今季ERA数値は未取得）</li>
-      <li><span class="pos">楽天救援は前田8回2/3の快投でほぼ温存</span>（+1pt）。両先発の今季1軍数値なし → グレード上限C</li>
+      <li><span class="key">10:50追加確認で福島蓮のERAが判明</span>: 8試合3勝2敗 防2.26（5/28以降4登板連続QS）。コントレラスはNPB1軍実績ゼロ（2軍21.2回 防2.49・MLB95登板・右上腕張り離脱歴）→ 先発差を+1pt→+2ptに引き上げ</li>
+      <li><span class="pos">楽天救援は前田8回2/3の快投でほぼ温存</span>（+1pt）。コントレラスの1軍数値なし → グレード上限C（非拘束）</li>
     </ul>
   </div>
 
