@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-  <title>NPBプロ野球予測 2026-07-05 朝版</title>
+  <title>NPBプロ野球予測 2026-07-05 最終分析版</title>
   <style>
     :root {
       --bg: #0B1220;
@@ -89,7 +89,7 @@
     <div class="header-label">NPB プロ野球 AI 予測</div>
     <div class="header-date">2026年7月5日（日）</div>
     <div class="header-sub">本日6試合（デーゲーム3試合 13:30〜14:00／夕方1試合 17:00／ナイター2試合 18:00〜）</div>
-    <div class="header-badge">データ基準: 2026-07-05 朝版 08:45 JST</div>
+    <div class="header-badge">データ基準: 2026-07-05 最終分析版 09:20 JST（朝版 08:45 から先発4枠を確定）</div>
   </div>
 
   <!-- 前日検証 -->
@@ -104,13 +104,13 @@
   <!-- カード整合性チェック -->
   <div class="notice-box">
     <span style="color:#e2e8f0;font-weight:700;">カード整合性チェック（日付明記ソース必須）:</span>
-    日曜のため7/4と同一6カード継続が原則。スポーツ報知「【5日の予告先発】」記事（中日金丸-巨人井上／OXエスピノーザ-西武隅田ほか）、パ・リーグ.com記事（楽天コントレラス-日ハム福島蓮／OX-西武 7/5 14:00京セラD明記）、サンスポ（阪神村上・広島床田のスライド登板）、ヤクルト球団公式の7/5試合ページ、goal.com（SFB-ロッテ 13:30）で全カード裏取り済み。検索中に出現した「7/5先発=北斗・ロング・前田・細野」とする集約情報は全員7/4登板済みのため<strong style="color:#e2e8f0;">誤情報として排除</strong>。npb.jp等の直接取得は403のためスニペット抽出で代替。
+    日曜のため7/4と同一6カード継続が原則。<strong style="color:#e2e8f0;">最終分析版でスポーツ報知「【5日の予告先発】」（2026-07-04付・dメニューニュース配信）の全文スニペットを取得し、6カード12先発を全て確定</strong>: ヤクルト吉村貢司郎-DeNA深沢鳳介（18:00神宮）／中日金丸夢斗-巨人井上温大（13:30バンテリン）／阪神村上頌樹-広島床田寛樹（18:00甲子園）／楽天コントレラス-日ハム福島蓮（17:00楽天モバイル）／OXエスピノーザ-西武隅田知一郎（14:00京セラD）／SFB松本晴-ロッテ小島和哉（13:30みずほPayPay）。パ・リーグ.com・サンスポ・ヤクルト球団公式・goal.comの日付明記記事とも整合。「7/5先発=北斗・ロング・前田・細野」とする集約情報は全員7/4登板済みのため<strong style="color:#e2e8f0;">誤情報として排除</strong>。npb.jp・統計サイトの直接取得は403継続のためスニペット抽出で代替。
   </div>
 
   <!-- 厳選判定 -->
   <div class="pick-box">
     <span class="pick-title">本日は見送り推奨</span><br>
-    グレードA（勝率70%以上）該当なし。最高確度は阪神59%（B）。B判定の実績的中率が54.8%まで低下しているため、58%以上の付与は「両先発フル実測」の試合のみに制限しました（本日は阪神-広島のみ該当）。数値化できる根拠のみで算出し、「勢い」等の物語的要素は使用していません。
+    グレードA（勝率70%以上）該当なし。最高確度は阪神59%（B）。最終分析版で12先発が全て確定しましたが、B判定の実績的中率が54.8%まで低下しているため、58%以上の付与は「両先発フル実測」の試合のみに制限しています（本日は阪神-広島のみ該当。ヤクルト-DeNAは計算値61%だが深沢のWHIP未取得のため57%Cに制限）。数値化できる根拠のみで算出し、「勢い」等の物語的要素は使用していません。
   </div>
 
   <!-- 試合カード（確度順） -->
@@ -119,7 +119,7 @@
   <!-- 1. 阪神 - 広島 59% B -->
   <div class="game-card grade-b-card">
     <div class="card-meta">
-      <span class="card-venue">阪神甲子園球場（開始時刻未取得）</span>
+      <span class="card-venue">阪神甲子園球場 18:00</span>
       <span class="grade-badge b">グレード B ／ 阪神 59%</span>
     </div>
     <div class="teams-row">
@@ -143,6 +143,7 @@
       <li>チーム勝率差 .535 vs .418（+5pt）／甲子園ホーム+4pt／WHIP0.92の村上に+1pt</li>
       <li>6/27の直接対決は床田側が3-2で勝利。<span class="neg">再戦の巡り合わせだが物語的要素は加点しない</span></li>
       <li>直近較正悪化により-1ptの保守調整。本日唯一の「両先発フル実測」カード</li>
+      <li><span class="neg">雨天中止リスク高</span>: 甲子園周辺は降水確率55〜80%・予想雨量25mm超の予報（7/4も中止=阪神今季12度目）。中止時は検証対象外</li>
     </ul>
   </div>
 
@@ -155,12 +156,12 @@
     <div class="teams-row">
       <div class="team-block">
         <div class="team-name home">ヤクルト</div>
-        <div class="team-starter">先発未取得</div>
+        <div class="team-starter">吉村貢司郎（3.83・WHIP0.99）</div>
       </div>
-      <div class="score-pred">4 - 3</div>
+      <div class="score-pred">5 - 3</div>
       <div class="team-block">
         <div class="team-name visitor">DeNA</div>
-        <div class="team-starter">先発未取得</div>
+        <div class="team-starter">深沢鳳介（1軍 6.23）</div>
       </div>
     </div>
     <div class="prob-bar">
@@ -169,8 +170,9 @@
     </div>
     <div class="prob-labels"><span>ホーム勝率</span><span>ビジター勝率</span></div>
     <ul class="reason-list">
-      <li><span class="neg">両チームの予告先発が未取得</span>（松本健吾・篠木は7/4登板済み）→ <span class="key">グレード上限C・計算値59%を57%に制限</span></li>
-      <li>チーム勝率差 .528 vs .414（+5pt）／神宮ホーム+4pt</li>
+      <li><span class="key">最終分析版で先発確定</span>: 吉村貢司郎（防3.83 WHIP0.99=6月末実測） vs 深沢鳳介（1軍3先発 防6.23・3試合連続KO→2軍6月防1.29で再昇格・今季1軍初白星なし）</li>
+      <li>チーム勝率差 .528 vs .414（+5pt）／神宮ホーム+4pt／深沢の1軍実績リスク+2pt</li>
+      <li><span class="key">計算値61%だが57%Cに制限</span>: 「58%以上は両先発フル実測時のみ」ルール適用（深沢WHIP未取得・1軍13回の小サンプルは2軍好調に寄せて控えめ評価）</li>
       <li>神宮は本塁打が出やすく予想スコアは高め設定。DeNAはこのカード2連勝中だが数値化対象外</li>
     </ul>
   </div>
@@ -179,27 +181,27 @@
   <div class="game-card grade-c-card">
     <div class="card-meta">
       <span class="card-venue">みずほPayPayドーム 13:30</span>
-      <span class="grade-badge c">グレード C ／ ソフトバンク 56%</span>
+      <span class="grade-badge c">グレード C ／ ソフトバンク 55%</span>
     </div>
     <div class="teams-row">
       <div class="team-block">
         <div class="team-name home">ソフトバンク</div>
-        <div class="team-starter">先発未取得</div>
+        <div class="team-starter">松本晴（今季数値未取得）</div>
       </div>
       <div class="score-pred">4 - 3</div>
       <div class="team-block">
         <div class="team-name visitor">ロッテ</div>
-        <div class="team-starter">先発未取得</div>
+        <div class="team-starter">小島和哉（2.57=6/21実測）</div>
       </div>
     </div>
     <div class="prob-bar">
-      <div class="prob-home" style="width:56%">56%</div>
-      <div class="prob-visitor" style="width:44%">44%</div>
+      <div class="prob-home" style="width:55%">55%</div>
+      <div class="prob-visitor" style="width:45%">45%</div>
     </div>
     <div class="prob-labels"><span>ホーム勝率</span><span>ビジター勝率</span></div>
     <ul class="reason-list">
-      <li><span class="neg">両チームの予告先発が未取得</span>（スカパー予報の小島36%等は「予想」のため不採用）→ <span class="key">グレード上限C</span></li>
-      <li>チーム勝率差 .608 vs .507（+4pt）／ホーム+4pt</li>
+      <li><span class="key">最終分析版で先発確定</span>: 松本晴（<span class="neg">今季数値未取得</span>・6/28ロッテ戦先発でチーム勝利） vs 小島和哉（防2.57=6/21実測・<span class="neg">直近6/28は2回KO</span>）→ 片方未取得でグレード上限B（C運用）</li>
+      <li>チーム勝率差 .608 vs .507（+4pt）／ホーム+4pt／小島の実測優位を-1pt（朝版56%→55%）</li>
       <li><span class="neg">SFB救援陣は7/4に7回分を大量消費</span>（北斗2回KO）＋連続デーゲームで回復時間最短 → -2pt</li>
     </ul>
   </div>
