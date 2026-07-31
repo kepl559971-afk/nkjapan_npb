@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-  <title>NPBプロ野球予測 2026-07-20 朝版</title>
+  <title>NPBプロ野球予測 2026-07-31 朝版</title>
   <style>
     :root {
       --bg: #0B1220;
@@ -89,120 +89,151 @@
 
   <div class="header">
     <div class="header-label">NPB プロ野球 AI 予測</div>
-    <div class="header-date">2026年7月20日（月）</div>
+    <div class="header-date">2026年7月31日（金）</div>
     <div class="header-sub">12球団全6試合</div>
-    <div class="header-badge">データ基準: 2026-07-20 朝版</div>
+    <div class="header-badge">データ基準: 2026-07-31 朝版</div>
   </div>
 
   <!-- 較正抽出サマリー -->
   <div class="notice-box">
     <span style="color:#e2e8f0;font-weight:700;">較正抽出（record.md/analysis.mdより）:</span>
-    累積50.3%(73/145)・Brier0.250（直近20試合0.251、4回連続悪化トレンドから反転・大幅改善）。グレード別的中率はA該当なし・B54.5%(36/66)・C46.8%(37/79)。ホーム51.1%(48/94)／ビジター49.0%(25/51)。直近の申し送りを反映: ①CL・PLの移動日は非対称に発生しうるため対戦カード確認前に試合の実在有無を先に確認(本日は6試合開催を複数ソースで確認済み) ②「劣勢側投手が好投・優勢側投手が崩れる」逆転や「未取得投手の好投」は方向性を保証しないため投手個別評価を過信しない ③直近2〜3登板で連続大炎上している投手が複数観測されており該当パターン蓄積時は中立評価から一段階マイナス方向を検討 ④58%以上は両先発フル実測時のみ・片方未取得はB上限・両方未取得はC上限・ERA差1.0未満60%上限・1試合上限65%を厳守。
+    累積50.3%(73/145)・Brier0.250（直近20試合0.251、4回連続悪化トレンドから反転・大幅改善）。グレード別的中率はA該当なし・B54.5%(36/66)・C46.8%(37/79、Bより低調のため中間の確率帯は保守的に判定)。ホーム51.1%(48/94)／ビジター49.0%(25/51)。直近3件の申し送り（7/17→7/18・7/18→7/19・7/19→7/20分）を反映: ①対戦カード確認前に「その日に試合が実在するか」を先に確認する運用を継続 ②「未取得投手の好投」等の逆転パターンは方向性を保証しないため投手個別評価を過信しない ③直近2〜3登板で連続大炎上する投手が複数観測されており該当パターン蓄積時は中立評価から一段階マイナス方向を検討する運用を次回該当時に本格検討 ④58%以上は両先発フル実測時のみ・片方未取得はB上限・両方未取得はC上限・ERA差1.0未満60%上限・1試合上限65%を厳守。<span class="warn">なお本セッションの前回更新は7/20朝版のため、7/21〜7/30分の検証記録はrecord.md/analysis.mdに未反映（累積145試合・50.3%は7/19終了時点のまま）。</span>
   </div>
 
   <!-- カード整合性チェック -->
   <div class="notice-box">
     <span style="color:#e2e8f0;font-weight:700;">カード整合性チェック:</span>
-    npb.jp・プロ野球Freak・Yahoo!スポーツナビは直接アクセスが403のため、スポーツ報知・au Webポータル・パ・リーグ.com等の検索スニペット経由で確認。12球団6試合とも複数の独立ソースで開催・対戦カード・予告先発が一致。セ・リーグは7/19終了で3連戦カードが入れ替わり新カード(巨人-広島・ヤクルト-中日・阪神-DeNA)が開始、パ・リーグは同一カード(楽天-西武・ロッテ-ソフトバンク・オリックス-日本ハム)が継続。西武は隅田知一郎が登録抹消中でローテが埋まらず、本日はE.ラミレスを起用する「ブルペンデー」であることを複数ソースで確認。
+    npb.jp・プロ野球Freak・Yahoo!スポーツナビは直接アクセスが403のため、日刊スポーツ・サンケイスポーツ・ベースボールチャンネル等の検索スニペット経由で確認。12球団6試合とも複数の独立ソースで対戦カード・球場・予告先発が一致、全試合18時開始。日本ハムは達孝太が中継ぎから約2ヶ月ぶりに先発復帰する「後半戦開幕投手」であることをサンケイスポーツ・スポーツ報知の複数ソースで確認。中日は髙橋宏斗が抹消明け・オールスター休養を挟んで本日先発する見込みであることを中日スポーツで確認。
   </div>
 
   <!-- 厳選判定 -->
   <div class="pick-box">
     <span class="pick-title">本日は見送り推奨（グレードA該当なし）</span><br>
-    最高確度はオリックス60%B。A(70%以上)に該当する試合はないため、厳選ピックは本日ありません。以下はグレード順に掲載します。的中を保証するものではありません。
+    最高確度は広島58%B・ソフトバンク58%B(同率)。A(70%以上)に該当する試合はないため、厳選ピックは本日ありません。以下はグレード順に掲載します。的中を保証するものではありません。
   </div>
 
   <!-- 試合カード -->
   <div class="section-title">本日の試合（確度順）</div>
 
-  <!-- オリックス - 日本ハム -->
+  <!-- 広島 - 中日 -->
   <div class="game-card grade-b-card">
     <div class="card-meta">
-      <span class="card-venue">京セラドーム大阪 13:00</span>
+      <span class="card-venue">マツダスタジアム 18:00</span>
       <span class="grade-badge b">グレードB</span>
     </div>
     <div class="teams-row">
       <div class="team-block">
-        <div class="team-name home">オリックス</div>
-        <div class="team-starter">九里亜蓮</div>
-      </div>
-      <div class="score-pred">6 - 3</div>
-      <div class="team-block">
-        <div class="team-name visitor">日本ハム</div>
-        <div class="team-starter">有原航平</div>
-      </div>
-    </div>
-    <div class="prob-bar">
-      <div class="prob-home" style="width:60%;">オリックス 60%</div>
-      <div class="prob-visitor" style="width:40%;">40% 日本ハム</div>
-    </div>
-    <div class="prob-labels"><span>ホーム</span><span>ビジター</span></div>
-    <ul class="reason-list">
-      <li><span class="key">投手成績:</span> 九里亜蓮(16試合6勝6敗・防御率3.03・99奪三振でパ3位)と有原航平(開幕5試合防御率8.23で一時ファーム降格、復帰後7試合も防御率6.47と今季通じて不振)は両先発フル実測データがありERA差はおよそ3〜4と本日最大。</li>
-      <li><span class="warn">継投状況:</span> オリックスは前日(7/19)高島泰都が3回1/3 10安打5失点でKOし継投陣に相当な負荷・5連敗中。日本ハムは前日5回1失点の山崎福也から中程度の負荷で好調。投手力差を最大限には反映せず60%に抑制。</li>
-      <li><span class="key">チーム力差:</span> 日本ハム.560 vs オリックス.494、差.066(+3pt、日本ハム有利)だが京セラドームオリックスホーム+4ptと投手力差が上回る。</li>
-    </ul>
-  </div>
-
-  <!-- 阪神 - DeNA -->
-  <div class="game-card grade-b-card">
-    <div class="card-meta">
-      <span class="card-venue">甲子園 18:00</span>
-      <span class="grade-badge b">グレードB</span>
-    </div>
-    <div class="teams-row">
-      <div class="team-block">
-        <div class="team-name home">阪神</div>
-        <div class="team-starter">大竹耕太郎</div>
-      </div>
-      <div class="score-pred">4 - 2</div>
-      <div class="team-block">
-        <div class="team-name visitor">DeNA</div>
-        <div class="team-starter">平良拳太郎</div>
-      </div>
-    </div>
-    <div class="prob-bar">
-      <div class="prob-home" style="width:58%;">阪神 58%</div>
-      <div class="prob-visitor" style="width:42%;">42% DeNA</div>
-    </div>
-    <div class="prob-labels"><span>ホーム</span><span>ビジター</span></div>
-    <ul class="reason-list">
-      <li><span class="warn">片方未取得(B上限):</span> 大竹耕太郎は検索データに新旧混在(ある集計は4試合・防御率2.52、直近プレビューは11試合3勝6敗)し確定防御率は未取得に準じる。平良拳太郎は防御率4.04のみ取得できWHIP等は未取得。</li>
-      <li><span class="key">チーム力差:</span> 阪神.560(セ首位) vs DeNA.446、差.114(+5pt)。甲子園阪神ホーム+4pt。</li>
-      <li><span class="key">前日消耗:</span> 前日(7/19)は阪神が村上→工藤→岩崎→ドリスの盤石リレーで大きな消耗なし。DeNAも片山5回1失点で継投は中程度の負荷。阪神は前川右京が死球による右肩甲骨骨折で離脱中(既に織り込み済み)。</li>
-    </ul>
-  </div>
-
-  <!-- ヤクルト - 中日 -->
-  <div class="game-card grade-b-card">
-    <div class="card-meta">
-      <span class="card-venue">明治神宮球場 18:00</span>
-      <span class="grade-badge b">グレードB</span>
-    </div>
-    <div class="teams-row">
-      <div class="team-block">
-        <div class="team-name home">ヤクルト</div>
-        <div class="team-starter">N.ウォルターズ</div>
+        <div class="team-name home">広島</div>
+        <div class="team-starter">床田寛樹</div>
       </div>
       <div class="score-pred">5 - 2</div>
       <div class="team-block">
         <div class="team-name visitor">中日</div>
-        <div class="team-starter">高橋宏斗</div>
+        <div class="team-starter">髙橋宏斗</div>
       </div>
     </div>
     <div class="prob-bar">
-      <div class="prob-home" style="width:58%;">ヤクルト 58%</div>
+      <div class="prob-home" style="width:58%;">広島 58%</div>
       <div class="prob-visitor" style="width:42%;">42% 中日</div>
     </div>
     <div class="prob-labels"><span>ホーム</span><span>ビジター</span></div>
     <ul class="reason-list">
-      <li><span class="warn">片方未取得(B上限):</span> N.ウォルターズは7/9時点で今季2登板のみ。同日は7回無安打の好内容だったが記録上の防御率は10.80と整合せず、WHIP等も未取得のため実質未取得に準じる。</li>
-      <li><span class="key">投手成績:</span> 高橋宏斗は6/1に登録抹消され本日が約2ヶ月ぶりの一軍復帰登板。防御率4.86・WHIP1.51に加え4〜6回限定防御率8.61と2巡目以降に崩れやすい傾向。</li>
-      <li><span class="key">チーム力差:</span> ヤクルト.482 vs 中日.391、差.091(+4pt)。神宮ヤクルトホーム+4pt。</li>
+      <li><span class="key">投手成績:</span> 床田寛樹は今季15試合・4勝4敗・防御率2.66・奪三振64(別集計では12試合・防御率2.54・WHIP1.24)と安定。髙橋宏斗は5/30時点で9試合1勝6敗・防御率4.86・WHIP1.51と不振だったが、6/1〜7/19の抹消を経て7/20の1軍復帰登板で8回3安打2失点の好投を見せ2勝目。以後オールスター休養を挟み本日が後半戦初登板で<span class="warn">直近実測は1試合のみ</span>。</li>
+      <li><span class="key">前日消耗:</span> 広島は前日(7/30)DeNAに7-4で逆転勝ち、8回を森浦が抑えて3勝目。中日は前日阪神に延長10回サヨナラ負け(2試合連続のサヨナラ負け)でブルペン・精神面ともに消耗。</li>
+      <li><span class="key">チーム力差:</span> 広島4位・中日6位(最下位)と複数ソースで一致(7/30時点)。7/19確定値でも広島.418 vs 中日.391で広島がやや優位。</li>
+      <li><span class="warn">較正反映:</span> 髙橋宏斗の直近実測が1試合のみで出来不確定要素が大きいため、投手成績差を額面通りには反映せず58%に抑制。</li>
     </ul>
   </div>
 
-  <!-- 巨人 - 広島 -->
+  <!-- 楽天 - ソフトバンク -->
+  <div class="game-card grade-b-card">
+    <div class="card-meta">
+      <span class="card-venue">楽天モバイルパーク宮城 18:00</span>
+      <span class="grade-badge b">グレードB</span>
+    </div>
+    <div class="teams-row">
+      <div class="team-block">
+        <div class="team-name home">楽天</div>
+        <div class="team-starter">早川隆久</div>
+      </div>
+      <div class="score-pred">3 - 5</div>
+      <div class="team-block">
+        <div class="team-name visitor">ソフトバンク</div>
+        <div class="team-starter">上茶谷大河</div>
+      </div>
+    </div>
+    <div class="prob-bar">
+      <div class="prob-home" style="width:42%;">42% 楽天</div>
+      <div class="prob-visitor" style="width:58%;">ソフトバンク 58%</div>
+    </div>
+    <div class="prob-labels"><span>ホーム</span><span>ビジター</span></div>
+    <ul class="reason-list">
+      <li><span class="warn">投手成績(データ一部不確定):</span> 早川隆久は検索データに新旧混在(ある集計は8試合・防御率2.13・WHIP0.87・3勝2敗、別の集計は13試合・防御率2.93・4勝4敗)。上茶谷大河は防御率2.12のみ取得できWHIP・K/BB等は未取得。</li>
+      <li><span class="key">チーム力差:</span> ソフトバンク.630(パ首位) vs 楽天.400(パ最下位)、差.230(+10pt)。楽天モバイル楽天ホーム+4pt。</li>
+      <li><span class="key">前日消耗:</span> ソフトバンクは前日(7/30)西武に6-0快勝、先発上沢が6回無失点で4勝目とブルペン消耗は小さい。楽天は前日ロッテ戦の結果を複数ソースで確認できず未取得。</li>
+      <li><span class="warn">較正反映:</span> 圧倒的なチーム力差にホーム補正を加えた基準はソフトバンク56%相当だが、上茶谷の防御率(2.12)が良好な点も踏まえやや上積みし58%(B上限)とした。</li>
+    </ul>
+  </div>
+
+  <!-- 日本ハム - ロッテ -->
+  <div class="game-card grade-c-card">
+    <div class="card-meta">
+      <span class="card-venue">エスコンフィールド 18:00</span>
+      <span class="grade-badge c">グレードC</span>
+    </div>
+    <div class="teams-row">
+      <div class="team-block">
+        <div class="team-name home">日本ハム</div>
+        <div class="team-starter">達孝太</div>
+      </div>
+      <div class="score-pred">4 - 3</div>
+      <div class="team-block">
+        <div class="team-name visitor">ロッテ</div>
+        <div class="team-starter">河村説人</div>
+      </div>
+    </div>
+    <div class="prob-bar">
+      <div class="prob-home" style="width:57%;">日本ハム 57%</div>
+      <div class="prob-visitor" style="width:43%;">43% ロッテ</div>
+    </div>
+    <div class="prob-labels"><span>ホーム</span><span>ビジター</span></div>
+    <ul class="reason-list">
+      <li><span class="warn">両方未取得に準じる不確実性(C上限):</span> 達孝太は開幕から先発9試合(2勝6敗・防御率4.06)の後5/30に抹消、6/16以降は中継ぎで10試合5H2S・防御率0.75と好投したが7/17に再抹消され二軍で先発調整、本日が「後半戦開幕投手」として約2ヶ月ぶりの先発復帰(役割変更直後で先発適性は未知数)。河村説人は一軍登板が僅少で二軍成績(12試合・防御率2.51)のみ確認でき実質未取得に準じる。</li>
+      <li><span class="key">チーム力差:</span> 日本ハム.563(2位) vs ロッテ.471(5位)、差.092(+4pt)。エスコンフィールド日本ハムホーム+4pt。</li>
+      <li><span class="key">前日消耗:</span> 日本ハムは前日(7/30)オリックスに9-2快勝、先発北山が6回2失点でリーグトップタイの8勝目とブルペン消耗は小さい。ロッテは前日楽天戦の結果が未取得。</li>
+    </ul>
+  </div>
+
+  <!-- 西武 - オリックス -->
+  <div class="game-card grade-c-card">
+    <div class="card-meta">
+      <span class="card-venue">ベルーナドーム 18:00</span>
+      <span class="grade-badge c">グレードC</span>
+    </div>
+    <div class="teams-row">
+      <div class="team-block">
+        <div class="team-name home">西武</div>
+        <div class="team-starter">隅田知一郎</div>
+      </div>
+      <div class="score-pred">4 - 2</div>
+      <div class="team-block">
+        <div class="team-name visitor">オリックス</div>
+        <div class="team-starter">寺西成騎</div>
+      </div>
+    </div>
+    <div class="prob-bar">
+      <div class="prob-home" style="width:57%;">西武 57%</div>
+      <div class="prob-visitor" style="width:43%;">43% オリックス</div>
+    </div>
+    <div class="prob-labels"><span>ホーム</span><span>ビジター</span></div>
+    <ul class="reason-list">
+      <li><span class="warn">両方未取得に準じる不確実性(C上限):</span> 隅田知一郎は7/20時点で登録抹消中だったが本日までに復帰(パ・リーグ防御率ランキング4位・勝利数8位までは判明も具体的な数値は未取得)。寺西成騎も今季の具体的な防御率等は未取得(2025年ルーキーイヤーは11試合・防御率5点台)。</li>
+      <li><span class="key">チーム力差:</span> 西武.570(2位) vs オリックス.500(4位)、差.070(+3pt)。ベルーナドーム西武ホーム+4pt。</li>
+      <li><span class="key">前日消耗:</span> 前日(7/30)西武はソフトバンクに0-6完封負け、オリックスは日本ハムに2-9で大敗。ともに打撃不振だったが高レバレッジのリリーフ登板は少なかったとみられる。</li>
+    </ul>
+  </div>
+
+  <!-- 巨人 - DeNA -->
   <div class="game-card grade-c-card">
     <div class="card-meta">
       <span class="card-venue">東京ドーム 18:00</span>
@@ -211,103 +242,76 @@
     <div class="teams-row">
       <div class="team-block">
         <div class="team-name home">巨人</div>
-        <div class="team-starter">井上温大</div>
+        <div class="team-starter">S.ハワード</div>
       </div>
-      <div class="score-pred">5 - 3</div>
+      <div class="score-pred">4 - 3</div>
       <div class="team-block">
-        <div class="team-name visitor">広島</div>
-        <div class="team-starter">床田寛樹</div>
+        <div class="team-name visitor">DeNA</div>
+        <div class="team-starter">平良拳太郎</div>
       </div>
     </div>
     <div class="prob-bar">
-      <div class="prob-home" style="width:57%;">巨人 57%</div>
-      <div class="prob-visitor" style="width:43%;">43% 広島</div>
+      <div class="prob-home" style="width:56%;">巨人 56%</div>
+      <div class="prob-visitor" style="width:44%;">44% DeNA</div>
     </div>
     <div class="prob-labels"><span>ホーム</span><span>ビジター</span></div>
     <ul class="reason-list">
-      <li><span class="key">投手成績:</span> 井上温大(8試合・防御率3.09・WHIP1.07・K/9 9.06・被打率.229)と床田寛樹(12試合・防御率2.54・WHIP1.24)はERA差0.55。床田のERAは良いがWHIP・奪三振率は井上が明確に上回る。<span class="warn">「ERA差1.0未満60%上限」ルールを適用。</span></li>
-      <li><span class="key">チーム力差:</span> 巨人.548(2位) vs 広島.418、差.130(+5pt)。東京ドーム巨人ホーム+4pt。</li>
-      <li><span class="key">前日消耗:</span> 前日(7/19)は巨人が8回にマシンガン継投で4投手起用しやや消耗、広島も7-8回のリリーフが3失点でやや消耗。両者ほぼ互角。</li>
+      <li><span class="warn">片方実質未取得(B上限、さらに保守化):</span> S.ハワードは今季巨人での実測データが取得できず、判明したのは昨季楽天在籍時(9試合5勝1敗・防御率2.22)の数字のみで実質未取得に準じる。平良拳太郎は検索データに新旧混在(ある集計は2勝5敗・防御率4.04、別の集計は3勝5敗・防御率3.65)。</li>
+      <li><span class="key">チーム力差:</span> 巨人.549(3位) vs DeNA(7/19時点.446、5位)、差.10程度(+4pt)。東京ドーム巨人ホーム+4pt。</li>
+      <li><span class="key">前日消耗:</span> 前日(7/30)巨人はヤクルトに3-4で逆転負け、DeNAは広島に4-7で逆転負け。ともに終盤の失点が絡みブルペンにやや負荷。</li>
+      <li><span class="warn">較正反映:</span> 新加入投手(ハワード)の現在の実戦力が完全に未知数のため片方未取得ルールでB上限(58%)を適用しつつ、より保守的に56%(C)とした。</li>
     </ul>
   </div>
 
-  <!-- ロッテ - ソフトバンク -->
+  <!-- ヤクルト - 阪神 -->
   <div class="game-card grade-c-card">
     <div class="card-meta">
-      <span class="card-venue">ZOZOマリンスタジアム 17:00</span>
+      <span class="card-venue">明治神宮球場 18:00</span>
       <span class="grade-badge c">グレードC</span>
     </div>
     <div class="teams-row">
       <div class="team-block">
-        <div class="team-name home">ロッテ</div>
-        <div class="team-starter">A.ジャクソン</div>
+        <div class="team-name home">ヤクルト</div>
+        <div class="team-starter">奥川恭伸</div>
       </div>
-      <div class="score-pred">3 - 5</div>
+      <div class="score-pred">3 - 4</div>
       <div class="team-block">
-        <div class="team-name visitor">ソフトバンク</div>
-        <div class="team-starter">大関友久</div>
+        <div class="team-name visitor">阪神</div>
+        <div class="team-starter">才木浩人</div>
       </div>
     </div>
     <div class="prob-bar">
-      <div class="prob-home" style="width:44%;">44% ロッテ</div>
-      <div class="prob-visitor" style="width:56%;">ソフトバンク 56%</div>
+      <div class="prob-home" style="width:48%;">48% ヤクルト</div>
+      <div class="prob-visitor" style="width:52%;">阪神 52%</div>
     </div>
     <div class="prob-labels"><span>ホーム</span><span>ビジター</span></div>
     <ul class="reason-list">
-      <li><span class="warn">片方未取得:</span> 大関友久は5/29完封後6/5に大炎上・約1カ月のファーム調整を経て7/11復帰。検索結果に新旧データが混在し今季通算の確定防御率は未取得に準じる。ジャクソンは防御率3.23・K/9 8.32だがBB/9 3.33とやや制球面に不安があり、保守的に評価。</li>
-      <li><span class="key">チーム力差:</span> ソフトバンク.624(パ首位) vs ロッテ.481、差.143(+6pt)。ZOZOマリンロッテホーム+4pt。</li>
-      <li><span class="key">前日消耗:</span> 前日(7/19)はソフトバンクが前田悠伍7回無失点でロッテに3-0快勝、救援は杉山1イニングのみで<span class="pos">ブルペンはほぼ全休</span>。</li>
-    </ul>
-  </div>
-
-  <!-- 楽天 - 西武 -->
-  <div class="game-card grade-c-card">
-    <div class="card-meta">
-      <span class="card-venue">楽天モバイルパーク宮城 16:00</span>
-      <span class="grade-badge c">グレードC</span>
-    </div>
-    <div class="teams-row">
-      <div class="team-block">
-        <div class="team-name home">楽天</div>
-        <div class="team-starter">岸孝之</div>
-      </div>
-      <div class="score-pred">4 - 5</div>
-      <div class="team-block">
-        <div class="team-name visitor">西武</div>
-        <div class="team-starter">E.ラミレス</div>
-      </div>
-    </div>
-    <div class="prob-bar">
-      <div class="prob-home" style="width:47%;">47% 楽天</div>
-      <div class="prob-visitor" style="width:53%;">西武 53%</div>
-    </div>
-    <div class="prob-labels"><span>ホーム</span><span>ビジター</span></div>
-    <ul class="reason-list">
-      <li><span class="warn">両方未取得に準じる不確実性:</span> 岸孝之(41歳)は直近登板7回1失点無四球と好内容だが今季通算の防御率・WHIPは未取得。E.ラミレスは隅田知一郎の登録抹消でローテが埋まらず来日2年目で一軍公式戦初の先発となる「ブルペンデー」で、今季の救援実績(4試合4回・防御率4.50)のみでロング適性は未知数。</li>
-      <li><span class="key">チーム力差:</span> 西武.575(2位) vs 楽天.412(パ最下位)、差.163(+7pt)。楽天モバイルパーク楽天ホーム+4pt。</li>
-      <li><span class="key">留意点:</span> 西武は計画的なブルペンデーのためリリーフ陣総動員が見込まれ、通常の先発起用より変動幅が大きい。</li>
+      <li><span class="key">投手成績:</span> 奥川恭伸は12試合・81.1回・防御率2.77・WHIP1.03・K/BB5.33・3勝と安定した内容。才木浩人は<span class="warn">複数ソースで数値が一致せず確定困難(実質未取得に準じる)</span>だが、2025年は12勝6敗・防御率1.55で最優秀防御率のエースで、今季も7/17時点で7勝(130球8回2失点の力投)を記録済み。</li>
+      <li><span class="key">チーム力差:</span> ヤクルトと阪神は勝率で同率首位に浮上したと複数の独立記事(日テレNEWS NNN・Infoseek等)で一致(7/30時点)、チーム力差はほぼゼロと判断。明治神宮ヤクルトホーム+4pt。</li>
+      <li><span class="key">前日消耗:</span> 前日(7/30)ヤクルトは巨人に4-3で逆転勝ちし3連勝、阪神は中日に3-2で延長10回サヨナラ勝ち、岩崎が救援で今季初勝利するなどブルペンをやや消耗。</li>
+      <li><span class="warn">較正反映:</span> チーム力互角・ホーム補正のみなら基準はヤクルト54%だが、才木浩人の実績(2025年最優秀防御率・今季7勝ペース)を投手面の優位として反映し押し戻した。才木側の数値未確定を片方未取得ルール(B上限58%)で抑制しつつ、奥川自身も好成績である拮抗を踏まえ阪神52%(ビジター)とした。</li>
     </ul>
   </div>
 
   <!-- 順位表 -->
-  <div class="section-title">順位表（7/19終了時点）</div>
+  <div class="section-title">順位表（7/30終了時点）</div>
   <table class="standings-table">
     <tr><th>リーグ</th><th>チーム</th><th>勝</th><th>敗</th><th>勝率</th></tr>
-    <tr class="pl"><td>パ</td><td class="team-abbr">ソフトバンク</td><td>53</td><td>32</td><td class="rate">.624</td></tr>
-    <tr class="pl"><td>パ</td><td class="team-abbr">西武</td><td>50</td><td>37</td><td class="rate">.575</td></tr>
-    <tr class="pl"><td>パ</td><td class="team-abbr">日本ハム</td><td>51</td><td>40</td><td class="rate">.560</td></tr>
-    <tr class="pl"><td>パ</td><td class="team-abbr">オリックス</td><td>42</td><td>43</td><td class="rate">.494</td></tr>
-    <tr class="pl"><td>パ</td><td class="team-abbr">ロッテ</td><td>39</td><td>42</td><td class="rate">.481</td></tr>
-    <tr class="pl"><td>パ</td><td class="team-abbr">楽天</td><td>35</td><td>50</td><td class="rate">.412</td></tr>
-    <tr class="cl"><td>セ</td><td class="team-abbr">阪神</td><td>47</td><td>37</td><td class="rate">.560</td></tr>
-    <tr class="cl"><td>セ</td><td class="team-abbr">巨人</td><td>46</td><td>38</td><td class="rate">.548</td></tr>
-    <tr class="cl"><td>セ</td><td class="team-abbr">ヤクルト</td><td>41</td><td>44</td><td class="rate">.482</td></tr>
-    <tr class="cl"><td>セ</td><td class="team-abbr">DeNA</td><td>37</td><td>46</td><td class="rate">.446</td></tr>
-    <tr class="cl"><td>セ</td><td class="team-abbr">広島</td><td>33</td><td>46</td><td class="rate">.418</td></tr>
-    <tr class="cl"><td>セ</td><td class="team-abbr">中日</td><td>34</td><td>53</td><td class="rate">.391</td></tr>
+    <tr class="pl"><td>パ</td><td class="team-abbr">ソフトバンク</td><td>58</td><td>34</td><td class="rate">.630</td></tr>
+    <tr class="pl"><td>パ</td><td class="team-abbr">西武</td><td>53</td><td>40</td><td class="rate">.570</td></tr>
+    <tr class="pl"><td>パ</td><td class="team-abbr">日本ハム</td><td>54</td><td>42</td><td class="rate">.563</td></tr>
+    <tr class="pl"><td>パ</td><td class="team-abbr">オリックス</td><td>46</td><td>46</td><td class="rate">.500</td></tr>
+    <tr class="pl"><td>パ</td><td class="team-abbr">ロッテ</td><td>41</td><td>46</td><td class="rate">.471</td></tr>
+    <tr class="pl"><td>パ</td><td class="team-abbr">楽天</td><td>36</td><td>54</td><td class="rate">.400</td></tr>
+    <tr class="cl"><td>セ</td><td class="team-abbr">阪神</td><td>51</td><td>40</td><td class="rate">.560</td></tr>
+    <tr class="cl"><td>セ</td><td class="team-abbr">ヤクルト</td><td>—</td><td>—</td><td class="rate">.560</td></tr>
+    <tr class="cl"><td>セ</td><td class="team-abbr">巨人</td><td>50</td><td>41</td><td class="rate">.549</td></tr>
+    <tr class="cl"><td>セ</td><td class="team-abbr">広島</td><td>—</td><td>—</td><td class="rate">—</td></tr>
+    <tr class="cl"><td>セ</td><td class="team-abbr">DeNA</td><td>—</td><td>—</td><td class="rate">—</td></tr>
+    <tr class="cl"><td>セ</td><td class="team-abbr">中日</td><td>—</td><td>—</td><td class="rate">—</td></tr>
   </table>
   <div class="notice-box" style="margin-top:8px;">
-    ※共同通信配信の地方紙（佐賀新聞・北日本新聞・愛媛新聞等）掲載表による7/19終了時点の値。引分は勝率算出のみに反映。順位表サイトは直接取得不可（403）のため検索スニペット経由。
+    ※パ・リーグ全6球団と阪神・巨人は複数の地方紙(北日本新聞・沖縄タイムス等)掲載の確定値(7/30終了時点、ゲーム差との整合を検算済み)。ヤクルトは阪神と勝率で同率首位に浮上したことを日テレNEWS NNN・Infoseek等の複数独立記事で確認できたが正確な勝敗数は未取得。広島4位・DeNA5位・中日6位という順位関係も同様に複数記事で一致したが、正確な勝敗数は未取得のため「—」表記(推測で数値を埋めていません)。順位表サイトは直接取得不可（403）のため検索スニペット経由。
   </div>
 
   <!-- 検証記録 -->
@@ -316,7 +320,7 @@
     <strong style="color:#e2e8f0;">累積成績: 145試合 73勝72敗（的中率50.3%）</strong>／Brierスコア 0.250（0.25=ランダム相当・低いほど良い）・直近20試合 0.251（4回連続悪化から反転・大幅改善）<br>
     グレード別: A判定 0試合／B判定 54.5%（36/66）／C判定 46.8%（37/79）<br>
     ホーム予測 51.1%（48/94）／ビジター予測 49.0%（25/51）<br>
-    ※数試合の結果は統計的に無意味です。予測精度の評価は数十試合単位で行います。単一試合の外れでロジックは変更しません。
+    ※数試合の結果は統計的に無意味です。予測精度の評価は数十試合単位で行います。単一試合の外れでロジックは変更しません。前回更新(7/20朝版)から本日まで検証記録の更新が空いているため、上記は7/19終了時点の値です。
   </div>
 
   <!-- about -->
